@@ -167,7 +167,7 @@ section {
   color: rgb(0, 19, 61);
 }
 
-#imageone{
+#imageone {
   position: absolute;
   width: 15%;
   top: 25%;
@@ -176,23 +176,30 @@ section {
   border-radius: 20px;
 }
 
-#imagetwo{
+#imagetwo {
   position: absolute;
   width: 15%;
-  top:60%;
+  top: 60%;
   left: 5%;
   rotate: 7deg;
   border-radius: 20px;
 }
 
-#imagethree{
+#imagethree {
   position: absolute;
   width: 15%;
-  top:50%;
+  top: 50%;
   right: 3%;
   rotate: 7deg;
   border-radius: 20px;
 }
 #two {
-  background-color: seagreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+#two img {
+  width: 70%;
 }
