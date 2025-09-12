@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root{
+  --gray: rgb(151, 151, 151);
+  --red: #FF0000;
+  --fontR: 58px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +32,7 @@ nav {
   display: flex;
   width: 100%;
   height: 100%;
-  /* background-color: rgb(250, 174, 174); */
+  background-color: rgba(255, 255, 255, 0.611);
   border-radius: 50px;
   padding: 0px 50px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -81,10 +88,9 @@ main {
   /* background-color: aquamarine; */
 }
 
-section {
+section{
   width: 100%;
   height: 100vh;
-  /* background-color: orange; */
 }
 
 #one {
@@ -193,13 +199,291 @@ section {
   rotate: 7deg;
   border-radius: 20px;
 }
+
+
+/* Second Section */
 #two {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
 }
 
-#two img {
+#figma{
   width: 70%;
+}
+
+#coffee{
+  position: absolute;
+  top: 5%;
+  left: 75%;
+  width: 12%;
+  height: 200px;
+  object-fit: cover;
+  rotate: 10deg;
+  border-radius: 30px;
+}
+
+/* Section 3 */
+
+#three{
+  display: flex;
+  background-color: seagreen;
+  height: 50vh;
+}
+
+.feedback{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+.feedback i{
+  font-size: 100px;
+  color: red;
+}
+
+.feedback h3{
+  font-size: 2rem;
+  width: 40%;
+  text-align: center;
+}
+
+.feedback h3 span{
+  color: red;
+  font-style: italic;
+}
+
+#f1{
+  border-right: 3px dashed rgb(198, 198, 198);
+}
+
+#f2 .ri-emotion-happy-line{
+  color: rgb(72, 155, 232);
+}
+
+#f2 h3 span{
+  color: rgb(72, 155, 232);
+}
+
+
+/* Section 4 */
+
+#four{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+}
+
+.cards{
+  display: flex;
+}
+
+.card{
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  margin-left: -50px;
+}
+
+.card:nth-child(1){
+  background-image: url(https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  rotate: -5deg;
+}
+
+.card:nth-child(2){
+  background-image: url(https://images.unsplash.com/photo-1631168228401-c37875b22ee8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: top;
+  rotate: -4deg;
+  margin-top: -10px;
+}
+
+.card:nth-child(3){
+  background-image: url(https://images.unsplash.com/photo-1523824921871-d6f1a15151f1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: top;
+  rotate: -2deg;
+  margin-top: -15px;
+}
+
+.card:nth-child(4){
+  background-image: url(https://images.unsplash.com/photo-1520423465871-0866049020b7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  rotate: 0deg;
+  margin-top: -20px;
+}
+
+.card:nth-child(5){
+  background-image: url(https://images.unsplash.com/photo-1554727242-741c14fa561c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: top;
+  rotate: 2deg;
+  margin-top: -15px;
+}
+
+.card:nth-child(6){
+  background-image: url(https://images.unsplash.com/photo-1539125530496-3ca408f9c2d9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   rotate: 4deg;
+  margin-top: -10px;
+}
+
+.card:nth-child(7){
+  background-image: url(https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: top;
+  rotate: 6deg;
+  margin-top: 0px;
+}
+
+.paraH{
+  color: var(--gray);
+  padding: 5px 10px;
+  background-color: aliceblue;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin-top: 30px;
+}
+
+.headingH{
+  font-size: var(--fontR);
+  font-weight: 500;
+  width: 50%;
+  text-align: center;
+}
+
+.headingH span{
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnBsYzU3ODRmdDJnejRydHNpNDVjcHEybGZkdmw0b2lqNW8xdms4MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/96habvfBVjd7YfFnoG/giphy.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.btn{
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 18px 36px;
+  border: none;
+  margin-top: 40px;
+}
+
+
+/* Five */
+#five{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEF8FF;
+  gap: 20px;
+}
+
+#five img{
+  width: 45%;
+}
+
+#five p{
+  width: 35%;
+  text-align: center;
+}
+
+/* Six */
+
+#six{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEF8FF;
+}
+
+.pic-six{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-top: 5%;
+  padding-right: 5%;
+  width: 80%;
+  height: 70%;
+  background-image: url(https://images.unsplash.com/photo-1593841539534-f06842807dfb?q=80&w=1648&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  border-radius: 40px;
+  color: #fff;
+}
+
+.pic-six h2{
+  text-align: right;
+  font-size: 2.5rem;
+}
+
+.pic-six p{
+  width: 40%;
+  text-align: right;
+}
+
+/* seven */
+
+#seven{
+  background-color: #EEF8FF;
+  height: 90vh;
+}
+
+.top-seven{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  height: 90%;
+}
+
+.btm-seven{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+}
+
+.btm-seven .btn{
+  margin-top: 0;
+}
+
+.seven-card{
+  width: 28%;
+  height: 70%;
+  border-radius: 30px 30px 0px 0px;
+  overflow: hidden;
+}
+
+.seven-img{
+  width: 100%;
+  height: 60%;
+}
+
+.seven-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seven-card h3{
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.seven-card p{
+  padding: 15px 25px;
+  text-align: center;
 }
